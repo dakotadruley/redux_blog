@@ -1,13 +1,15 @@
+export const POST = 'POST';
 export const post = (title, body) => ({
-    type: 'POST',
+    type: POST,
     payload: {
         title,
         body
     }
 });
 
+export const DELETE_POST = 'DELETE_POST';
 export const deletePost = post => ({
-    type: 'DELETE_POST',
+    type: DELETE_POST,
     payload: post
 });
 
